@@ -14,7 +14,7 @@
     <style>
     body{ padding-top: 50px;}
     .carousel{
-    	height: 400px;background-color: #000;
+    	height: 400px;background-color: #000; margin-bottom: 50px;
     }
     .carousel .item{
     	height: 400px;background-color: #000;
@@ -23,7 +23,19 @@
     .carousel-caption p{
 		margin-bottom: 20px; font-size: 16px;line-height: 1.4;
     }
+    .col-md-4 img{
+    	height: 156px;width: 156px;
+    }
 
+    #container{
+    	margin: 0px auto;width: 80%;
+    }
+	#container .col-md-4{
+		text-align: center;
+	}
+	hr.divider{
+		margin:40px 0;
+	}
     </style>
   </head>
   <body>
@@ -122,6 +134,57 @@
   		</a>
 	</div>
 
+	<div class="container" id="container">
+		<!-- 栅格布局 -->
+		<div class="row">
+			<div class="col-md-4">
+				<img src="images/chrome.jpg" alt="chrome" class="img-circle">
+				<h2>Chrome</h2>
+				<p>Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器。</p>
+      			<p><a class='btn btn-default' href="http://www.google.cn/chrome/" target='_blank' role='button'>点击下载</a></p>
+			</div>
+			<div class="col-md-4">
+				<img src="images/firefox.jpg" alt="firefox" class="img-circle">
+				<h2>Firefox</h2>
+				<p>Mozilla Firefox，是一个开源网页浏览器，使用Gecko引擎，支持多种操作系统，如Windows、Mac和linux。Firefox由Mozilla基金会与社区数百个志愿者以GPL/LGPL/MPL三种授权方式发布，2012年1月3日起改用兼容GPL的MPL 2。</p>
+      			<p><a class='btn btn-default' href="http://www.firefox.com.cn/download/" target='_blank' role='button'>点击下载</a></p>
+			</div>
+			<div class="col-md-4">
+				<img src="images/safari.jpg" alt="Safari" class="img-circle">
+				<h2>Safari</h2>
+      			<p>Safari，是苹果计算机的最新操作系统Mac OS X中的浏览器，使用了KDE的KHTML作为浏览器的运算核心。Safari在2003年1月7日首度发行测试版，并成为Mac OS X v10.3与之后的默认浏览器，也是iPhone与iPad和iPod touch的指定浏览器。</p>
+      			<p><a class='btn btn-default' href="http://www.apple.com/cn/itunes/charts/" target='_blank' role='button'>点击下载</a></p>
+			</div> 
+		</div> <!-- end 栅格布局 -->
+		<hr class='divider'>
+		<!-- 标签页 -->
+		<div class="container">
+			<ul class="nav nav-tabs" role="tablist">
+				<li class="active"><a href="#tab-chrome" role='tab' data-toggle='tab'>Chrome</a></li>
+				<li><a href="#tab-firefox" role='tab' data-toggle='tab'>Firefox</a></li>
+				<li><a href="#tab-safari" role='tab' data-toggle='tab'>Safari</a></li>
+				<li><a href="#tab-opera" role='tab' data-toggle='tab'>Opera</a></li>
+				<li><a href="#tab-ie" role='tab' data-toggle='tab'>IE</a></li>
+			</ul>
+
+			<div class="tab-content">
+				<div class="tab-pane active" id='tab-chrome'>
+					<div class="col-md-5">
+						<img class='' src="" alt="">
+					</div>
+					<div class="col-md-7">
+						<h2 class='feature-heading'>Chrome<span class='text-muted'></span></h2>
+						<p class='lead'></p>
+					</div>
+				</div>
+				<div class="tab-pane" id='tab-firefox'>hahahahha</div>
+				<div class="tab-pane" id='tab-safari'>hahahahha</div>
+				<div class="tab-pane" id='tab-opera'>hahahahha</div>
+				<div class="tab-pane" id='tab-ie'>hahahahha</div>
+			</div>
+		</div>
+	</div> 
+	
 
     <script src="js/jquery-2.0.3.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
